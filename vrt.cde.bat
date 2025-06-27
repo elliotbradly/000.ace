@@ -1,4 +1,4 @@
 
 cd..
 cd vcode
-start Code.exe ../000.primal.mom
+start Code.exe ../000.ace

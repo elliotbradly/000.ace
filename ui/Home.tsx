@@ -7,7 +7,7 @@ export default function EarthlyDecorativeFrame() {
     return (
         <div>
 
-            <div> PRIMAL.MOM </div>
+            <div> ACE.POLE </div>
 
         </div>)
 }
