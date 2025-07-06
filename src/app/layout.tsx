@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import Providers from "@/lib/query-provider";
+import Providers from "../lib/query-provider";
 import "./globals.css";
 
 

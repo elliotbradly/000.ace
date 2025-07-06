@@ -9,7 +9,15 @@ const nextConfig = {
         hostname: "*",
       },
     ],
-  },
+  }, transpilePackages: [
+    '@mantine/core',
+    '@mantine/hooks',
+    '@mantine/notifications',
+    '@mantine/dates',
+    '@mantine/code-highlight',
+    '@mantine/form',
+    // Add any other @mantine packages you are using
+  ],
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
   },
@@ -32,8 +40,8 @@ const nextConfig = {
       },
     ];
   },
-  
- 
+
+
 };
 
 export default nextConfig;
