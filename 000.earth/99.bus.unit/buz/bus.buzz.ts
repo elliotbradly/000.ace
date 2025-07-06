@@ -1,4 +1,10 @@
-import * as ActMnu from "../../98.menu.unit/menu.action";
+
+import { BusModel } from "../bus.model";
+import BusBit from "../fce/bus.bit";
+import State from "../../99.core/state";
+import S from "string";
+import clone from "clone-deep";
+
 import * as ActBus from "../../99.bus.unit/bus.action";
 import * as ActCol from "../../97.collect.unit/collect.action";
 
@@ -123,7 +129,7 @@ export const openBus = async (cpy: BusModel, bal: BusBit, ste: State) => {
 export const connectBus = (cpy: BusModel, bal: BusBit, ste: State) => {
 
   var lst = []
-  if (bal.val == 1) patch(ste, ActMnu.INIT_MENU, { lst })
+  //if (bal.val == 1) patch(ste, ActMnu.INIT_MENU, { lst })
 }
 
 export const messageBus = async (cpy: BusModel, bal: BusBit, ste: State) => {
@@ -225,9 +231,3 @@ export const updateBus = async (cpy: BusModel, bal: BusBit, ste: State) => {
 
 var patch = (ste, type, bale) => ste.dispatch({ type, bale });
 
-
-import { BusModel } from "../bus.model";
-import BusBit from "../fce/bus.bit";
-import State from "../../99.core/state";
-import S from "string";
-import * as clone from "clone-deep";

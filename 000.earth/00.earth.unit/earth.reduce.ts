@@ -1,4 +1,4 @@
-import * as clone from "clone-deep";
+import clone from "clone-deep";
 import * as Act from "./earth.action";
 import { EarthModel } from "./earth.model";
 import * as Buzz from "./earth.buzzer";

@@ -1,4 +1,4 @@
-import * as clone from "clone-deep";
+import clone from "clone-deep";
 import * as Act from "./bus.action";
 import { BusModel } from "./bus.model";
 import * as Buzz from "./bus.buzzer";

@@ -3,9 +3,20 @@ import { EarthModel } from "../earth.model";
 import EarthBit from "../fce/earth.bit";
 import State from "../../99.core/state";
 
+var count = 0; 
+
 export const initEarth = (cpy: EarthModel, bal: EarthBit, ste: State) => {
 
-    bal.slv({ intBit: { idx: "init-earth", dat: { src: 'genesis' } } });
+    if ( cpy.count == 0 ){
+
+        setInterval( ()=>{
+            cpy.count += 1;
+        }, 3333)
+
+    }
+    
+
+    bal.slv({ intBit: { idx: "init-earth",  dat: { src: 'genesis', val:cpy.count } } });
 
     return cpy;
 };
@@ -27,7 +38,7 @@ export const openEarth = (cpy: EarthModel, bal: EarthBit, ste: State) => {
 
 export const updateEarth = (cpy: EarthModel, bal: EarthBit, ste: State) => {
     
-    bal.slv({ ertBit: { idx: "update-earth", dat: { src: 'updated' } } });
+    bal.slv({ ertBit: { idx: "update-earth", val: cpy.count, dat: { src: 'updated' } } });
 
     return cpy;
 };

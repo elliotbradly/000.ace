@@ -83,7 +83,7 @@ export const updateEarth = async (val) => {
 
   // bit = await time(ActClk.WRITE_CLOCK, { idx: 'clk00', dat: { sec: 3 } })
   // var dat = bit['clkBit'].dat.src
-  var dat
+  //var dat
 
   //  return { idx: 'update-okwierdo', lst: [dat] }
   // }
@@ -96,9 +96,11 @@ export const updateEarth = async (val) => {
   // var bit = await okwierdo(ActOkw.UPDATE_KWIERDO, {});
   // dex += 1;
 
+  bit = await earth (ActErt.UPDATE_EARTH, {});
+
 
   // lastList = bit['okwBit'].lst
-  return { idx: 'update-earth', lst: [] }
+  return { idx: 'update-earth', dat: bit }
 }
 
 
