@@ -3,8 +3,6 @@
 import { earth } from '@earth/000.earth.pvt';
 import * as ActErt from "@earth/00.earth.unit/earth.action"
 
-import { testTimeBus } from '@base/001.time'
-import { testSpaceBus } from '@base/002.space'
 
 //import { time } from '@time/001.time.pvt';
 //import * as ActTme from "@time/00.time.unit/time.action"
@@ -116,15 +114,6 @@ export const initTime = async (val) => {
   return
 }
 
-export const testTime = async (val) => {
-  var bit = await testTimeBus(bus)
-  return bit;
-}
-
-export const testSpace = async (val) => {
-  var bit = await testSpaceBus(bus)
-  return bit;
-}
 
 
 export const mqtt = async (val) => {
