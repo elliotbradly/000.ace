@@ -16,6 +16,9 @@ export function reducer(model: EarthModel = new EarthModel(), act: Act.Actions, 
  case Act.OPEN_EARTH:
  return Buzz.openEarth(clone(model), act.bale, state);
 
+case Act.TEST_EARTH:
+ return Buzz.testEarth(clone(model), act.bale, state);
+ 
  default:
  return model;
  }
