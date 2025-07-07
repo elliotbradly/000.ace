@@ -1,4 +1,4 @@
-import Classes from '@ui/Classes';
+import Classes from '@ui/ClassesTop';
 
 /**
  * The main page component that renders the HomePage component.

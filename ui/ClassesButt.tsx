@@ -5,7 +5,7 @@ export default function EarthlyDecorativeFrame() {
     return (
         <div>
 
-            <div> Length </div>
+            <div> Classes Butt </div>
 
         </div>)
 }
