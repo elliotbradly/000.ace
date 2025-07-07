@@ -9,9 +9,12 @@ import classCss from './css/StageOneButton.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { Modal } from '@mantine/core';
 
+import { useSearchParams } from 'next/navigation';
+
 export default function EarthlyDecorativeFrame() {
 
-    const searchParams = new URLSearchParams(window.location.search);
+    const searchParams = useSearchParams();
+
     var description = searchParams.get('description');
 
     description =String( description ).charAt(0).toUpperCase() + String( description ).slice(1);
