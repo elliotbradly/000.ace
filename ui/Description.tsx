@@ -2,7 +2,8 @@
 
 import React from "react";
 
-import { Center, Button, Paper, Text, Group, Grid, Affix } from "@mantine/core"
+import { Center, Button, Paper, Text, Title, Group, Grid, Affix } from "@mantine/core"
+
 import classes from './css/StageOneButton.module.css';
 
 export default function EarthlyDecorativeFrame() {
@@ -26,7 +27,9 @@ export default function EarthlyDecorativeFrame() {
 
                 <Group justify="center">
                     <Paper withBorder shadow="md" p="sm">
-                        <Text fw={700}>Description</Text>
+
+                    <Title> Description </Title>
+
                     </Paper>
                 </Group>
 
